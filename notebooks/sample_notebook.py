@@ -25,4 +25,4 @@
 from kb_devops_proj.tasks.sample_ml_task import SampleMLTask
 
 pipeline = SampleMLTask.get_pipeline()
-print(pipeline....)
+print(pipeline)
