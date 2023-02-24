@@ -33,6 +33,3 @@ environments:
             <<: *basic-static-cluster
             dbt_task:
                 parameters: ["file:fuse:conf/tasks/dbt_task_config.json"]
-      #######################################################################################
-      # this is an example job with single ETL task based on 2.1 API and wheel_task format #
-      ######################################################################################
