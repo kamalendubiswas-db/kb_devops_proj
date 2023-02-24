@@ -43,11 +43,11 @@ stages:
       displayName: 'Run Unit tests'
 
     - script: |
-        python -m dbx deploy kb_devops_proj-sample-etl --assets-only
+        python -m dbx deploy dbt_task_manifest_test --assets-only
       displayName: 'Deploy workflow assets'
 
     - script: |
-        python -m dbx launch kb_devops_proj-sample-etl --from-assets --trace
+        python -m dbx launch dbt_task_manifest_test --from-assets --trace
       displayName: 'Launch workflow from assets'
 
     - task: PublishTestResults@2
@@ -92,7 +92,7 @@ stages:
         displayName: 'Run Unit tests'
 
       - script: |
-          python -m dbx deploy kb_devops_proj-sample-etl
+          python -m dbx deploy dbt_task_manifest_test
         displayName: 'Deploy the job'
 
       - task: PublishTestResults@2
