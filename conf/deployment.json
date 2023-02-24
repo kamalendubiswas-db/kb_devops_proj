@@ -21,7 +21,7 @@
                       ],
                       "profiles_directory": ""
                   },
-                  "job_cluster_key": "dbt_CLI",
+                  "job_cluster_key": "dbt_clsuter",
                   "libraries": [
                       {
                           "pypi": {
@@ -35,7 +35,7 @@
           ],
           "job_clusters": [
             {
-                "job_cluster_key": "dbt_CLI",
+                "job_cluster_key": "dbt_clsuter",
                 "new_cluster": {
                     "spark_version": "11.3.x-scala2.12",
                     "spark_conf": {
