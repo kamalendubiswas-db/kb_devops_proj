@@ -43,12 +43,12 @@ stages:
       displayName: 'Run Unit tests'
 
     - script: |
-        python -m dbx deploy kb_sample_job --assets-only
-      displayName: 'Deploy workflow assets'
+        python -m dbx deploy kb_sample_job
+      displayName: 'Deploy workflow'
 
     - script: |
-        python -m dbx launch kb_sample_job --from-assets --trace
-      displayName: 'Launch workflow from assets'
+        python -m dbx launch kb_sample_job
+      displayName: 'Launch workflow'
 
     - task: PublishTestResults@2
       condition: succeededOrFailed()
